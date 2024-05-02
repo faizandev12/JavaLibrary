@@ -123,15 +123,17 @@ public class Complexe {
         double ai = scan.nextDouble();
         Complexe a = new Complexe(ar, ai);
         Complexe b = new Complexe(5, 10);
-        Complexe c= new Complexe(2,4);
+        Complexe c = new Complexe(2,4);
 
         
-        Complexe sum = a.addition(b);
-        System.out.println("Addition: " + a + " + " + b + " = " + sum);
+
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
-        System.out.println("(("+c+") + ("+b+"))="+c.addition(b));
+        
+        Complexe sum = a.addition(b);
+        System.out.println("Addition: " + a + " + " + b + " = " + sum);
+        
         System.out.println("(("+c+") + ("+b+"))="+Complexe.additioner(c,b));
         System.out.println("(("+c+") - ("+b+"))="+c.soustraction(b));
         System.out.println("(("+c+") x ("+b+"))="+c.multiplication(b));
