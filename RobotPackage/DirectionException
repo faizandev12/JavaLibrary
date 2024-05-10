@@ -1,0 +1,10 @@
+
+
+ package RobotPackage;
+ public class DirectionException extends Exception {
+
+ public DirectionException() {
+
+ System.out.println("La direction doit être 'NE' ou 'SO'");
+ }
+ }
